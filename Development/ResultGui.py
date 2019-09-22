@@ -52,7 +52,7 @@ class ResultWidget(QWidget, mainwindow_class):
                 score += 1
 
         scoreText = "점수: " + str(score) + "/" + str(totalQuestions)
-        scorePercentText = "정답률: " + str(round(score/totalQuestions*100, 0)) + "%" 
+        scorePercentText = "정답률: " + str(int(round(score/totalQuestions*100, 0)))+ "%" 
 
         return scoreText, scorePercentText
 

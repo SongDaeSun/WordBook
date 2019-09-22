@@ -22,7 +22,6 @@ class ToolBox():
         dirSting = os.getcwd() + "\\BackEnd\\" + fileName
         return (dirSting)
 
-'''
 test = ToolBox()
-test.SearchUiDir("AskUi.ui")
-'''
+
+print(test.SearchUiDir("AskUi.ui"))

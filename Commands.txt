@@ -1,0 +1,2 @@
+python -m PyQt5.uic.pyuic -x MainGUI.ui -o MainGUI.py
+pyinstaller --windowed --onefile  MainGUI.py
