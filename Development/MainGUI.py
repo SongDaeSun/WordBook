@@ -5,7 +5,7 @@ from PyQt5 import uic
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 from MenuGui import MenuWidget
-from QuizGui import QuizWidget
+from MainQuizGui import MainQuizWidget
 
 from BackEnd import Korean_Greek_Dictionary, Korean_Greek_Quiz
 
@@ -18,7 +18,7 @@ class MainWindow(QWidget):
         self.dictionary = Korean_Greek_Dictionary.Korean_Greek_Dictionary()
         self.quiz = Korean_Greek_Quiz.Quiz(self.dictionary)
 
-        self.quizWidget = QuizWidget(self.quiz)
+        self.quizWidget = MainQuizWidget(self.quiz)
 
         self.setGUI()
 
@@ -27,10 +27,10 @@ class MainWindow(QWidget):
         self.stk_l.addWidget(self.quizWidget)
 
         self.menuWidget.quizButton.clicked.connect(self.GoQuizMenu)
-        self.quizWidget.menuButton.clicked.connect(self.GoMenu)
+        self.quizWidget.quizWidget.menuButton.clicked.connect(self.GoMenu)
 
         self.setLayout(self.stk_l)
-        self.setGeometry(0, 0, 1200, 675)
+        self.setGeometry(0, 30, 1200, 675)
     
         
     def GoQuizMenu(self):

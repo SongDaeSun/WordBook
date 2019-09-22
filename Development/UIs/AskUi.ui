@@ -91,7 +91,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="EnterButton">
+  <widget class="QPushButton" name="enterButton">
    <property name="geometry">
     <rect>
      <x>400</x>
