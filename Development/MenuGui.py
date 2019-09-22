@@ -4,7 +4,10 @@ from PyQt5.QtCore import *
 from PyQt5 import uic
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-mainwindow_class  = uic.loadUiType("MenuUi.ui")[0]
+from GuiToolBox import ToolBox
+
+tb = ToolBox()
+mainwindow_class  = uic.loadUiType(tb.SearchUiDir("MenuUi.ui"))[0]
 
 class MenuWidget(QWidget, mainwindow_class):
     def __init__(self):

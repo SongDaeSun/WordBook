@@ -7,7 +7,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from MenuGui import MenuWidget
 from QuizGui import QuizWidget
 
-import Korean_Greek_Dictionary, Korean_Greek_Quiz
+from BackEnd import Korean_Greek_Dictionary, Korean_Greek_Quiz
 
 class MainWindow(QWidget):
     def __init__(self):

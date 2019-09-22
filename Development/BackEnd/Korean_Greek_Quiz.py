@@ -1,5 +1,5 @@
-import Korean_Greek_Dictionary
-import ToolFunctions
+from BackEnd import Korean_Greek_Dictionary
+from BackEnd import ToolFunctions
 import random
 
 tf = ToolFunctions.ToolFunction

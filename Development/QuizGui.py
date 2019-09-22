@@ -3,11 +3,11 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5 import uic
 from PyQt5 import QtCore, QtGui, QtWidgets
-import GuiToolBox
+from GuiToolBox import ToolBox
 
-tb = GuiToolBox.ToolBox
+tb = ToolBox()
 
-mainwindow_class  = uic.loadUiType("QuizUi.ui")[0]
+mainwindow_class  = uic.loadUiType(tb.SearchUiDir("QuizUi.ui"))[0]
 
 class QuizWidget(QWidget, mainwindow_class):
     def __init__(self, quiz):

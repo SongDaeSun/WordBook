@@ -59,7 +59,7 @@ class Korean_Greek_Dictionary():
         return len(self.dictionary)
     
     def ReadMemory(self):
-        f = open('Korean_Greek_Memory.txt', 'r', -1, "utf-8")
+        f = open('BackEnd\\Korean_Greek_Memory.txt', 'r', -1, "utf-8")
         self.dictionary = list()
         
         while True:
